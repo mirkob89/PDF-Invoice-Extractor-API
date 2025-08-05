@@ -3,7 +3,7 @@ import multer from 'multer';
 import cors from 'cors';
 import fs from 'fs';
 import pdfParse from 'pdf-parse';
-import { extractInvoiceData } from './parser.js';
+import { extractInvoiceData } from './parser.mjs';
 
 const app = express();
 const upload = multer({ dest: 'uploads/' });
